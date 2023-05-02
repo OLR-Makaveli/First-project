@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+.offset {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+}
+
+header .Container {
+    position: fixed;
+    background-color: #F3E99F;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 3%;
+    box-shadow: 4px 4px 4px 4px rgb(170, 70, 70);
+    z-index: 99;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-right: 50px;
+
+}
+
+/* .Logo a h1{
+    color: rgb(143, 39, 97);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.Logoa a h1 div{background-color: rgb(143, 39, 97) ;
+    border-radius: 50px;
+    height: 50px;
+    font-family: cursive;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+
+} */
+.Container nav ul li {
+    list-style: none;
+}
+
+.Container nav ul li a {
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+.containers .Logo a {
+    text-decoration: none;
+    color: rgb(226, 133, 133);
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery {
+    background: url(./images/portfolio-9.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact a button {
+    background-color: rgb(200, 0, 255);
+    border: none;
+    padding: 1em 2.5em;
+    border-radius: 4rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h1 {
+    color: rgb(0, 145, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.gallery::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(50, 18, 18, 0.575);
+
+}
+
+.hero-text {
+    padding: 180px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.discover {
+    display: flex;
+    gap: 50px;
+}
+
+.discover a button {
+    background-color: orange;
+    padding: 1em 2.5em;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 10PX;
+}
+
+.discover .contact button {
+    background-color: transparent;
+    border: 2px solid white;
+
+}
+
+.discover a:hover button {
+    background-color: transparent;
+    border: 2px solid white;
+    transition: .5s ease;
+}
+.heading{
+    text-align: center;
+    padding: 10px;
+} 
+.heading h1{
+    font-size: 1.6em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.heading p{
+    font-size: larger;
+    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-img {
+    grid-column: span 6;
+    align-self: center;
+}
+
+.about-text {
+    grid-column: span 6;
+    align-self: center;
+}
+
+.sub-text {
+    grid-column: span 6;
+}
+
+.team-container img {
+    width: 100%;
+}
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.team{
+    padding: 150px 0px 100px;
+}
+.team-img{
+    position: relative;
+}
+.overlay{
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.744);
+width: 100%;
+height: 99%;
+overflow: hidden;
+opacity: 0;
+}
+.team-img:hover .overlay{
+    opacity: 1;
+}
+.style{
+    text-align: center;
+    padding: 10px;
+} 
+.style h2{
+    font-size: 1.6em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.style p{
+    font-size: larger;
+    color: rgb(218, 210, 219);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+.benny{
+        padding: 150px 0px 100px;
+}
+.team-set img {
+    width: 70%;
+}
+.team-set{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+}
+.cost{
+    padding: 150px 0 100px;
+}
+.flex-1 a, .flex-2 a, .flex-3 a{
+    display: flex;
+    gap: 50px;
+}
+.flex-1, .flex-2, .flex-3
+{
+    margin-bottom: 30px;
+}
+
